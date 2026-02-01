@@ -48,6 +48,6 @@ process_list = [
 ---
 
 ## 🖼 Images
-![FCFS Output](output.png)
+![FCFS Output](Output.png)
 
 ---
