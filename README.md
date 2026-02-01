@@ -30,5 +30,6 @@ Each process is written as:
 ----
 
 ## Images:
+![FCFS Output](output.png)
 
 
