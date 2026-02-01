@@ -24,12 +24,10 @@ Each process is written as:
 
 ---
 
-## 📚 References:
+## 📚 References
 - Hallow Teaches Stuff: https://youtu.be/TH_vRsr5Dy8?si=IDET4Du4dyjxescL
 
-----
+---
 
-## Images:
+## 🖼 Images
 ![FCFS Output](output.png)
-
-
