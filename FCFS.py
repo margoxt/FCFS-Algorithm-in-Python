@@ -28,10 +28,26 @@ def fcfs(process_list):
             tt = cc - process[0]
             wt = tt - process[1]
             completed[person_id] = [cc,tt,wt]
-        print(ganttChart)
-        print(completed)
+        print("\nGantt Chart: ", ganttChart)
+        print("Completed Table:")
+    for k, v in completed.items():
+        print(k, "p=> Completion:", v[0], "Turnaround:", v[1], "Waiting:", v[2])
+
+def get_user_input():
+    process_list = []
+    n = int(input("Enter number of processes: "))
+
+    for i in range(n):
+        print(f"\nProcess {i+1}")
+        pid = input("Enter Process ID (e.g., p1): ")
+        arrival = int(input("Enter Arrival Time: "))
+        burst = int(input("Enter Burst Time: "))
+        process_list.append([arrival, burst, pid])
+
+    return process_list
+
 
 if __name__ == "__main__":
-    process_list = [[2,6,"p1"], [5,2,"p2"],[1,8,"p3"],[0,3,"p4"], [4,4,"p5"]]
-    fcfs(process_list)
+    processes = get_user_input()
+    fcfs(processes)
 
